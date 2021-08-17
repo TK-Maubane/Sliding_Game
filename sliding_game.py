@@ -12,7 +12,8 @@ def btn_name(buttons):
     for btn in buttons:
         sel = choice(nums)
         btn["text"] = str(sel)
-        btn["bg"] = "pink"
+        btn["bg"] = "dark green"
+        btn['fg'] = 'white'
         nums.remove(sel)
 
 
@@ -33,17 +34,17 @@ def slide(button, blank):
         pass
 
     # Check for win
-    for btn in buttons:
-        if btn["text"] == 1 and btn["row"] == 0 and btn["column"] == 0 and \
-           btn["text"] == 2 and btn["row"] == 0 and btn["column"] == 1 and \
-           btn["text"] == 3 and btn["row"] == 0 and btn["column"] == 2 and \
-           btn["text"] == 4 and btn["row"] == 1 and btn["column"] == 0 and \
-           btn["text"] == 5 and btn["row"] == 1 and btn["column"] == 1 and \
-           btn["text"] == 6 and btn["row"] == 1 and btn["column"] == 2 and \
-           btn["text"] == 7 and btn["row"] == 2 and btn["column"] == 0 and \
-           btn["text"] == 8 and btn["row"] == 2 and btn["column"] == 1:
+    # for btn in buttons:
+    if (btn1["text"] == 1 and btn1["row"] == 0 and btn1["column"] == 0) and \
+        btn2["text"] == 2 and btn2["row"] == 0 and btn2["column"] == 1 and \
+        btn3["text"] == 3 and btn3["row"] == 0 and btn3["column"] == 2 and \
+        btn4["text"] == 4 and btn4["row"] == 1 and btn4["column"] == 0 and \
+        btn5["text"] == 5 and btn5["row"] == 1 and btn5["column"] == 1 and \
+        btn6["text"] == 6 and btn6["row"] == 1 and btn6["column"] == 2 and \
+        btn7["text"] == 7 and btn7["row"] == 2 and btn7["column"] == 0 and \
+        btn8["text"] == 8 and btn8["row"] == 2 and btn8["column"] == 1:
 
-            messagebox.showinfo(None, "Congratulations!\n You figured it out")
+        messagebox.showinfo(None, "Congratulations!\n You figured it out")
 
 
 # Create buttons and buttons list
