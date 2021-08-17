@@ -10,3 +10,5 @@ into proper sequence.
 * Application of DRY principle
 * End-user desktop based application
 
+## Finished Product
+![image](https://user-images.githubusercontent.com/62932119/129710083-a5fa238f-419e-44cd-a647-d6c76635a806.png)
